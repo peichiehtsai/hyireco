@@ -265,6 +265,8 @@
         </div>
     </footer>
 
+    <button id="btn-scrollTop" title="回到最上面"><i class="fas fa-angle-up"></i></button>
+
 
     <!-- Scripts -->
     <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
@@ -274,29 +276,49 @@
     <script src="./vendor/purpose/assets/js/purpose.js"></script>
 
     <script>
-        $('.nav-lang .nav-item').click(function(){
-            if( $(this).parent().siblings().children('.nav-item').hasClass('active') ){
-                $(this).addClass('active');
-                $(this).parent().siblings().children('.nav-item').removeClass('active');
+        $(document).ready(function(){
+            //===== Change Language =====
+            $('.nav-lang .nav-item').click(function(){
+                if( $(this).parent().siblings().children('.nav-item').hasClass('active') ){
+                    $(this).addClass('active');
+                    $(this).parent().siblings().children('.nav-item').removeClass('active');
+                }
+            })
+
+            //===== Nav RWD =====
+            $('.dropdown-btn').click(function(){
+                $(this).siblings('.dropdown-menu').toggleClass('active');
+                $(this).toggleClass('active');
+            })
+
+            $('.sidenav-toggler').click(function(){
+                $('.sidenav-toggler-content').toggleClass('show');
+            })
+
+            //===== Header RWD =====
+            if( $(window).width() < 1200 ){
+                $('.js-header-wrapper').removeClass('container');
+                $('.js-header-wrapper').addClass('container-fuild');
+            }else{
+                $('.js-header-wrapper').removeClass('container-fuild');
+                $('.js-header-wrapper').addClass('container');
             }
+
+            //===== Button ScrollTop =====
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 20) {
+                    $('#btn-scrollTop').fadeIn();
+                } else {
+                    $('#btn-scrollTop').fadeOut();
+                }
+            });
+            $('#btn-scrollTop').click(function(){
+                $('html, body').animate({scrollTop : 0},350);
+                return false;
+            });
+
         })
 
-        $('.dropdown-btn').click(function(){
-            $(this).siblings('.dropdown-menu').toggleClass('active');
-            $(this).toggleClass('active');
-        })
-
-        $('.sidenav-toggler').click(function(){
-            $('.sidenav-toggler-content').toggleClass('show');
-        })
-
-        if( $(window).width() < 1200 ){
-            $('.js-header-wrapper').removeClass('container');
-            $('.js-header-wrapper').addClass('container-fuild');
-        }else{
-            $('.js-header-wrapper').removeClass('container-fuild');
-            $('.js-header-wrapper').addClass('container');
-        }
     </script>
 </body>
 
