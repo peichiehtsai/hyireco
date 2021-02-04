@@ -123,6 +123,13 @@
 /*--- Banner ---*/
 .page_login .banner{
 	padding: 5.8rem 0;
+	background-image: url('../images/banner.png');
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+}
+.page_login .banner .card{
+	background-color: rgba(255, 255, 255, .85);
 }
 .page_login .banner .card-header .login-title{
 	font-size: 1.5rem;
@@ -287,7 +294,7 @@
 	/*===== 登入頁 login.html =====*/
 	/*--- Sidenav Toggler ---*/
 	.page_login .sidenav-toggler{
-		padding: 1rem;
+		padding: 1.3rem;
 		margin-right: 1rem;
 	}
 	.page_login .sidenav-toggler-content{
@@ -305,7 +312,7 @@
 	}
 
 	.page_login .nav-wrapper{
-		margin-top: 40px;
+		margin-top: 53px;
 		padding: 0 1.2rem;
 	}
 	.page_login .nav-dropdown .dropdown-menu{
@@ -353,6 +360,12 @@
 		transform: rotate(-180deg);
 	}
 
+	/*--- Main ---*/
+	.page_login .main{
+		padding-top: 53px;
+	}
+
+
 	/*===== 首頁 index.html =====*/
 	.index .card-custom{
 		height: 515px;
@@ -369,12 +382,24 @@
 	/*--- Banner ---*/
 	.page_login .banner{
 		padding: 1.5rem 0 5rem;
+		background-position: 70% 0;
 	}
 }
 
 
 @media screen and (max-width: 767px){
 	/*===== 登入頁 login.html =====*/
+	/*--- Main ---*/
+	.page_login .main{
+		padding-top: 44px;
+	}
+	/*--- Sidenav Toggler ---*/
+	.page_login .sidenav-toggler{
+		padding: 1rem;
+	}
+	.page_login .nav-wrapper{
+		margin-top: 44px;
+	}
 	/*--- Banner ---*/
 	.page_login .banner .card-header{
 		padding: 1rem;
@@ -411,6 +436,7 @@
 	/*--- Banner ---*/
 	.page_login .banner{
 		padding: 1.5rem 0 3rem;
+		background-position: 65% 0;
 	}
 	.page_login .banner .banner-title .subhead{
 		font-size: 1rem;
@@ -424,7 +450,11 @@
 		text-align: center;
 	}
 
-	/*--- Sidenav ---*/
+	/*--- Sidenav Toggler ---*/
+	/* .page_login .sidenav-toggler{
+		padding: 1.1rem;
+	} */
+
 	.page_login .nav-wrapper{
 		padding: 0;
 	}
