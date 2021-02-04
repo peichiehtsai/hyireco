@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="凌網科技">
     <meta name="author" content="凌網科技">
-    <title>HYiReco 人員進出自動辨識系統</title>
+    <title>人員進出自動辨識 | HYiReco</title>
     <!-- Favicon -->
     <link rel="icon" href="./vendor/purpose/assets/img/brand/favicon.png" type="image/png">
     <!-- Font Awesome 5 -->
@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="./vendor/purpose/assets/libs/fullcalendar/dist/fullcalendar.min.css">
     <!-- Vendor- Purpose CSS -->
     <link rel="stylesheet" href="./vendor/purpose/assets/css/purpose.css" id="stylesheet">
-    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/c-global.css" id="stylesheet">
     <link rel="stylesheet" href="./css/c-layout.css" id="stylesheet">
@@ -24,6 +23,7 @@
 <body class="application application-offset">
     <!-- Application container -->
     <div class="container-fluid container-application">
+        <!-- Sidenav (For Mobile) -->
         <div class="sidenav" id="sidenav-main">
             <!-- Sidenav header -->
             <div class="sidenav-header d-flex align-items-center">
@@ -70,7 +70,7 @@
             <!-- Application nav -->
             <div class="nav-application clearfix">
                 <a href="index.html" class="btn btn-square text-sm">
-                    <span class="btn-inner--icon d-block"><i class="fas fa-home fa-2x active"></i></span>
+                    <span class="btn-inner--icon d-block"><i class="fas fa-home fa-2x"></i></span>
                     <span class="btn-inner--icon d-block pt-2">首頁</span>
                 </a>
                 <a href="#" class="btn btn-square text-sm">
@@ -85,7 +85,7 @@
                     <span class="btn-inner--icon d-block"><i class="fas fa-columns fa-2x"></i></span>
                     <span class="btn-inner--icon d-block pt-2">事業單位管理者帳號設定</span>
                 </a>
-                <a href="identify_member_management.html" class="btn btn-square text-sm">
+                <a href="identify_member_management.html" class="btn btn-square text-sm active">
                     <span class="btn-inner--icon d-block"><i class="fas fa-users-cog fa-2x"></i></span>
                     <span class="btn-inner--icon d-block pt-2">人員進出自動辨識</span>
                 </a>
@@ -111,6 +111,7 @@
                 </a>
             </div>
         </div>
+
 
         <!-- Content -->
         <div class="main-content position-relative">
@@ -322,7 +323,7 @@
             </nav>
 
             <!-- Page content -->
-            <div class="page-content index">
+            <div class="page-content identify_member_management">
                 <!-- Page title -->
                 <div class="page-title">
                     <div class="row justify-content-between align-items-center">
@@ -332,172 +333,345 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-8 col-md-6">
-                        <div class="card card-fluid card-custom">
-                            <div class="card-header">
-                                <h6 class="mb-0">近期活動</h6>
-                            </div>
-                            <div class="list-group list-group-flush">
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <div class="media align-items-center">
-                                        <div class="media-body">
-                                            <h6 class="text-sm d-block text-limit mb-0">臺灣職安卡一般安全衛生教育訓練</h6>
-                                            <span class="d-block text-sm text-muted">管制人員：48人</span>
-                                        </div>
-                                        <div class="media-body text-right">
-                                            <span class="text-sm text-dark font-weight-bold ml-3">
-                                                活動日期 2021/01/31
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <div class="media align-items-center">
-                                        <div class="media-body">
-                                            <h6 class="text-sm d-block text-limit mb-0">屋頂作業主管安全衛生在職教育訓練</h6>
-                                            <span class="d-block text-sm text-muted">管制人員：69人</span>
-                                        </div>
-                                        <div class="media-body text-right">
-                                            <span class="text-sm text-dark font-weight-bold ml-3">
-                                                活動日期 2021/02/02
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <div class="media align-items-center">
-                                        <div class="media-body">
-                                            <h6 class="text-sm d-block text-limit mb-0">有害作業主管安全衛生在職教育訓練</h6>
-                                            <span class="d-block text-sm text-muted">管制人員：30人</span>
-                                        </div>
-                                        <div class="media-body text-right">
-                                            <span class="text-sm text-dark font-weight-bold ml-3">
-                                                活動日期 2021/02/15
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <div class="media align-items-center">
-                                        <div class="media-body">
-                                            <h6 class="text-sm d-block text-limit mb-0">有害作業主管安全衛生在職教育訓練</h6>
-                                            <span class="d-block text-sm text-muted">管制人員：30人</span>
-                                        </div>
-                                        <div class="media-body text-right">
-                                            <span class="text-sm text-dark font-weight-bold ml-3">
-                                                活動日期 2021/02/15
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <div class="media align-items-center">
-                                        <div class="media-body">
-                                            <h6 class="text-sm d-block text-limit mb-0">有害作業主管安全衛生在職教育訓練</h6>
-                                            <span class="d-block text-sm text-muted">管制人員：30人</span>
-                                        </div>
-                                        <div class="media-body text-right">
-                                            <span class="text-sm text-dark font-weight-bold ml-3">
-                                                活動日期 2021/02/15
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="py-3 px-4 text-right">
-                                    <a href="#" class="text-dark text-sm">更多</a>
+                <!-- Listing -->
+                <div class="card">
+                    <!-- Card header -->
+                    <div class="card-header actions-toolbar border-0">
+                        <div class="actions-search" id="actions-search">
+                            <div class="input-group input-group-merge input-group-flush">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-transparent"><i class="fas fa-search"></i></span>
+                                </div>
+                                <input type="text" class="form-control form-control-flush" placeholder="Type and hit enter ...">
+                                <div class="input-group-append">
+                                    <a href="#" class="input-group-text bg-transparent" data-action="search-close" data-target="#actions-search"><i class="fas fa-times"></i></a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="card card-fluid card-custom">
-                            <div class="card-body text-center d-flex flex-column justify-content-center">
-                                <h5 class="mb-4">目前人數</h5>
-                                <div class="progress-circle progress-lg mx-auto" id="progress-5" data-progress="50" data-text="98" data-textclass="h1" data-color="warning"></div>
-                                <div class="d-flex mt-4">
-                                    <div class="col">
-                                        <span class="d-block badge badge-dot badge-lg h6">
-                                            <i class="bg-danger"></i>入場人數
-                                        </span>
-                                        <span class="d-block badge badge-dot badge-lg h6">
-                                            <i class="bg-success"></i>出場人數
-                                        </span>
-                                    </div>
-                                    <div class="col">
-                                        <span class="d-block badge badge-dot badge-lg h6">
-                                            <i class="bg-warning"></i>目前人數
-                                        </span>
-                                        <span class="d-block badge badge-dot badge-lg h6">
-                                            <i class="bg-danger"></i>SMTP error
-                                        </span>
-                                    </div>
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col">
+                                <h2 class="d-inline-block mb-0 card-title">人員進出自動辨識</h2>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center justify-content-sm-end align-items-center my-3">
+                            <div class="col-auto">
+                                <div class="form-group text-sm my-2">
+                                    <input type="text" class="form-control text-sm" placeholder="請輸入欲查詢關鍵字">
                                 </div>
-                                <a href="#" class="btn btn-block btn-secondary mt-auto">Open insights</a>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center justify-content-sm-end align-items-center mb-sm-2 mb-4 pagination">
+                            <div class="col-auto px-0">
+                                <span class="text-muted text-sm">每頁列數：</span>
+                            </div>
+                            <div class="col-auto">
+                                <select class="form-control form-control-sm font-weight-bold mr-4 border-0 bg-light page-select">
+                                    <option value="10">10</option>
+                                    <option value="20">20</option>
+                                    <option value="30">30</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                            </div>
+                            <div class="col-auto order-4 order-sm-3 mt-2 mt-sm-0 px-0">
+                                <span class="text-muted text-sm">共 866 筆資料，全部 87 頁，目前第 1 頁</span>
+                            </div>
+                            <div class="col-auto order-3 order-sm-4">
+                                <a href="#" class="btn btn-icon btn-sm btn-light my-1 btn-prev">
+                                    <i class="fas fa-angle-left icon-xs"></i>
+                                </a>
+                                <a href="#" class="btn btn-icon btn-sm btn-light my-1 btn-next">
+                                    <i class="fas fa-angle-right icon-xs"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="card card-fluid card-custom">
-                            <div class="card-body">
-                                <div class="row align-items-center mb-4">
-                                    <div class="col-auto">
-                                        <div class="progress-circle progress-sm" id="progress-1" data-progress="90" data-color="primary"></div>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#" class="d-block h6 mb-0">98 tasks solved</a>
-                                        <a href="#" class="text-sm text-muted">Purpose Website UI</a>
-                                    </div>
-                                </div>
-                                <div class="row align-items-center mb-4">
-                                    <div class="col-auto">
-                                        <div class="progress-circle progress-sm" id="progress-2" data-progress="40" data-color="warning"></div>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#!" class="d-block h6 mb-0">13 tasks solved</a>
-                                        <a href="#" class="text-sm text-muted">Webpixels website</a>
-                                    </div>
-                                </div>
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <div class="progress-circle progress-sm" id="progress-3" data-progress="60" data-color="info"></div>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#!" class="d-block h6 mb-0">23 tasks solved</a>
-                                        <a href="#" class="text-sm text-muted">Purpose Dashboard UI</a>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-sm btn-block btn-secondary mt-5">Open insights</a>
-                            </div>
-                        </div>
+                    <!-- Table -->
+                    <div class="table-responsive">
+                        <table class="table align-items-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="sort" data-sort="index">編號</th>
+                                    <th scope="col" class="sort" data-sort="name">場域(活動)名稱</th>
+                                    <th scope="col" class="sort" data-sort="status">起迄日期</th>
+                                    <th scope="col">辨識(入場)</th>
+                                    <th scope="col">辨識(出場)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="list">
+                                <tr>
+                                    <td scope="col">1</td>
+                                    <td scope="row">
+                                        <div class="media align-items-center">
+                                            <div class="media-body">
+                                                <span class="name mb-0 h6 text-sm">台北分公司門禁</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span>2021/01/01-2022/01/01</span>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>四樓</u></a></li>
+                                            <li><a href="#"><u>五樓(單號)</u></a></li>
+                                            <li><a href="#"><u>五樓(雙號)</u></a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>四樓</u></a></li>
+                                            <li><a href="#"><u>五樓(單號)</u></a></li>
+                                            <li><a href="#"><u>五樓(雙號)</u></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="col">2</td>
+                                    <td scope="row">
+                                        <div class="media align-items-center">
+                                            <div class="media-body">
+                                                <span class="name mb-0 h6 text-sm">2021尾牙</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span>2021/01/01-2022/01/01</span>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>永豐餘正門口</u></a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>永豐餘側門口</u></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="col">3</td>
+                                    <td scope="row">
+                                        <div class="media align-items-center">
+                                            <div class="media-body">
+                                                <span class="name mb-0 h6 text-sm">台北分公司門禁</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span>2021/01/01-2022/01/01</span>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>四樓</u></a></li>
+                                            <li><a href="#"><u>五樓(單號)</u></a></li>
+                                            <li><a href="#"><u>五樓(雙號)</u></a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>四樓</u></a></li>
+                                            <li><a href="#"><u>五樓(單號)</u></a></li>
+                                            <li><a href="#"><u>五樓(雙號)</u></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="col">4</td>
+                                    <td scope="row">
+                                        <div class="media align-items-center">
+                                            <div class="media-body">
+                                                <span class="name mb-0 h6 text-sm">2021尾牙</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span>2021/01/01-2022/01/01</span>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>永豐餘正門口</u></a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>永豐餘側門口</u></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="col">5</td>
+                                    <td scope="row">
+                                        <div class="media align-items-center">
+                                            <div class="media-body">
+                                                <span class="name mb-0 h6 text-sm">台北分公司門禁</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span>2021/01/01-2022/01/01</span>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>四樓</u></a></li>
+                                            <li><a href="#"><u>五樓(單號)</u></a></li>
+                                            <li><a href="#"><u>五樓(雙號)</u></a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>四樓</u></a></li>
+                                            <li><a href="#"><u>五樓(單號)</u></a></li>
+                                            <li><a href="#"><u>五樓(雙號)</u></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="col">6</td>
+                                    <td scope="row">
+                                        <div class="media align-items-center">
+                                            <div class="media-body">
+                                                <span class="name mb-0 h6 text-sm">2021尾牙</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span>2021/01/01-2022/01/01</span>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>永豐餘正門口</u></a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>永豐餘側門口</u></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="col">7</td>
+                                    <td scope="row">
+                                        <div class="media align-items-center">
+                                            <div class="media-body">
+                                                <span class="name mb-0 h6 text-sm">台北分公司門禁</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span>2021/01/01-2022/01/01</span>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>四樓</u></a></li>
+                                            <li><a href="#"><u>五樓(單號)</u></a></li>
+                                            <li><a href="#"><u>五樓(雙號)</u></a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>四樓</u></a></li>
+                                            <li><a href="#"><u>五樓(單號)</u></a></li>
+                                            <li><a href="#"><u>五樓(雙號)</u></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="col">8</td>
+                                    <td scope="row">
+                                        <div class="media align-items-center">
+                                            <div class="media-body">
+                                                <span class="name mb-0 h6 text-sm">2021尾牙</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span>2021/01/01-2022/01/01</span>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>永豐餘正門口</u></a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>永豐餘側門口</u></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="col">9</td>
+                                    <td scope="row">
+                                        <div class="media align-items-center">
+                                            <div class="media-body">
+                                                <span class="name mb-0 h6 text-sm">台北分公司門禁</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span>2021/01/01-2022/01/01</span>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>四樓</u></a></li>
+                                            <li><a href="#"><u>五樓(單號)</u></a></li>
+                                            <li><a href="#"><u>五樓(雙號)</u></a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>四樓</u></a></li>
+                                            <li><a href="#"><u>五樓(單號)</u></a></li>
+                                            <li><a href="#"><u>五樓(雙號)</u></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="col">10</td>
+                                    <td scope="row">
+                                        <div class="media align-items-center">
+                                            <div class="media-body">
+                                                <span class="name mb-0 h6 text-sm">2021尾牙</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span>2021/01/01-2022/01/01</span>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>永豐餘正門口</u></a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="identify_area_list">
+                                            <li><a href="#"><u>永豐餘側門口</u></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="card card-fluid card-custom">
-                            <div class="card-body text-center d-flex flex-column justify-content-center">
-                                <h5 class="mb-4">Congratulations!</h5>
-                                <div class="progress-circle progress-lg mx-auto" id="progress-4" data-progress="78" data-text="23" data-textclass="h1" data-color="primary"></div>
-                                <p class="mt-4 mb-0">
-                                    Github issues were closed this week.
-                                </p>
+                    <!-- Card footer -->
+                    <div class="card-footer">
+                        <div class="row justify-content-center justify-content-sm-end align-items-center mb-sm-2 mb-4 pagination">
+                            <div class="col-auto px-0">
+                                <span class="text-muted text-sm">每頁列數：</span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12">
-                        <!-- Calendar -->
-                        <div class="card card-custom widget-calendar">
-                            <div class="card-header">
-                                <div class="text-sm text-muted mb-1 widget-calendar-year"></div>
-                                <div class="h5 mb-0 widget-calendar-day"></div>
+                            <div class="col-auto">
+                                <select class="form-control form-control-sm font-weight-bold mr-4 border-0 bg-light page-select">
+                                    <option value="10">10</option>
+                                    <option value="20">20</option>
+                                    <option value="30">30</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
                             </div>
-                            <!-- Calendar -->
-                            <div data-toggle="widget-calendar"></div>
+                            <div class="col-auto order-4 order-sm-3 mt-2 mt-sm-0 px-0">
+                                <span class="text-muted text-sm">共 866 筆資料，全部 87 頁，目前第 1 頁</span>
+                            </div>
+                            <div class="col-auto order-3 order-sm-4">
+                                <a href="#" class="btn btn-icon btn-sm btn-light my-1 btn-prev">
+                                    <i class="fas fa-angle-left icon-xs"></i>
+                                </a>
+                                <a href="#" class="btn btn-icon btn-sm btn-light my-1 btn-next">
+                                    <i class="fas fa-angle-right icon-xs"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <!-- Footer -->
             <div class="footer pt-5 pb-4 footer-light" id="footer-main">
                 <div class="row text-center text-sm-left align-items-sm-center">
@@ -519,11 +693,8 @@
                     </div>
                 </div>
             </div>
-
-            
         </div>
     </div>
-
     <!-- Scripts -->
     <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
     <script src="./vendor/purpose/assets/js/purpose.core.js"></script>
@@ -534,7 +705,6 @@
     <script src="./vendor/purpose/assets/libs/fullcalendar/dist/fullcalendar.min.js"></script>
     <!-- Vendor- Purpose JS -->
     <script src="./vendor/purpose/assets/js/purpose.js"></script>
-
 </body>
 
 </html>

@@ -1,12 +1,142 @@
-.bg-primary{
-	background-color: #5CC6A5 !important;
-}
+/*===== Font =====*/
 .text-dark{
 	color: #244D3D !important;
 }
-
-
-.list-group-item-action:focus,
-.list-group-item-action:hover{
-	background-color: rgba(92,198,165,0.2);
+a{
+	color: #37906C;
 }
+a:hover{
+	color: #244D3D;
+}
+/*===== Z-index =====*/
+.zindex-2{
+	z-index: 2
+}
+
+.flex-0{
+	flex: 0;
+}
+
+/*===== Background =====*/
+.bg-primary{
+	background-color: #5CC6A5 !important;
+}
+
+/*===== Form Input =====*/
+.form-control:focus{
+	border-color: rgba(55, 144, 108, .5);
+    -webkit-box-shadow: inset 0 1px 1px rgba(31, 45, 61, .075), 0 0 20px rgba(55, 144, 108, .1);
+		    box-shadow: inset 0 1px 1px rgba(31, 45, 61, .075), 0 0 20px rgba(55, 144, 108, .1);
+}
+
+/*===== Buttons =====*/
+.btn-primary,
+.btn.btn-primary{
+	background-color: #37906C;
+	border-color: #37906C;
+	color: #FFF !important;
+}
+.btn-primary:active,
+.btn.btn-primary:not(:disabled):not(.disabled):active,
+.btn.btn-primary:not(:disabled):not(.disabled):hover{
+	background-color: #238058;
+	border-color: #238058;
+	color: #FFF;
+}
+
+.btn-secondary,
+.btn.btn-secondary{
+	background-color: #4D4D4D;
+	border-color: #4D4D4D;
+	color: #FFF !important;
+}
+.btn.btn-secondary:active,
+.btn.btn-secondary:not(:disabled):not(.disabled):active,
+.btn.btn-secondary:not(:disabled):not(.disabled):hover{
+	background-color: #2C2C2C;
+	border-color: #2C2C2C;
+	color: #FFF;
+}
+
+/*===== Card Title =====*/
+.card-header .card-title{
+	font-size: 1.85rem;
+	padding-left: 1rem;
+}
+.card-header .card-title:before{
+	content: '';
+	position: absolute;
+	left: 10px;
+	top: 0;
+	width: 4px;
+    height: 35px;
+	border-radius: 2px;
+	background-color: #37906C;
+}
+
+/*===== Table Head =====*/
+.table thead th{
+	font-size: 0.9rem;
+}
+
+/*===== Pagination Custom Style =====*/
+.pagination .page-select{
+	padding: 0.5rem 0.25rem;
+}
+
+.pagination .btn-prev,
+.pagination .btn-next{
+	padding: 0.5rem 0.5rem;
+}
+
+/*===== SweetAlert Style =====*/
+.swal-footer{
+	text-align: center;
+}
+
+.swal-button{
+	background-color: #4D4D4D;
+}
+.swal-button:active,
+.swal-button:not([disabled]):hover{
+	background-color: #2C2C2C;
+}
+.swal-button:focus{
+	box-shadow: none;
+}
+
+/*===== Vendor MultiFile =====*/
+.MultiFile-list{
+	margin-top: 0.7rem;
+}
+.MultiFile-list > .MultiFile-label{
+	padding: 4px 0;
+}
+.MultiFile-remove{
+	padding: 0 4px;
+}
+.multi.MultiFile{
+	color: transparent;
+}
+.MultiFile-wrap > .multi:first-child{
+	color: #8492a6;
+}
+
+/*===== Vendor Multi-select =====*/
+.ms-parent.form-control .ms-choice{
+	height: 100%;
+	border: 0;
+}
+.ms-parent.form-control .ms-choice>span{
+	top: 50%;
+    transform: translateY(-50%);
+}
+
+
+@media screen and (max-width:575px){
+	/*===== Card Title =====*/
+	.card-header .card-title{
+		font-size: 1.6rem;
+	}
+}
+

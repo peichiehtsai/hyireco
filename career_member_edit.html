@@ -1,11 +1,11 @@
-<html lang="en">
+<html lang="zh-TW">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="凌網科技">
     <meta name="author" content="凌網科技">
-    <title>HYiReco 人員進出自動辨識系統</title>
+    <title>事業單位人員維護 | HYiReco</title>
     <!-- Favicon -->
     <link rel="icon" href="./vendor/purpose/assets/img/brand/favicon.png" type="image/png">
     <!-- Font Awesome 5 -->
@@ -14,16 +14,19 @@
     <link rel="stylesheet" href="./vendor/purpose/assets/libs/fullcalendar/dist/fullcalendar.min.css">
     <!-- Vendor- Purpose CSS -->
     <link rel="stylesheet" href="./vendor/purpose/assets/css/purpose.css" id="stylesheet">
-    
+    <!-- Vendor - Multiple-select CSS -->
+    <link rel="stylesheet" href="./vendor/multiple-select-1.5.2/multiple-select.min.css" id="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/c-global.css" id="stylesheet">
     <link rel="stylesheet" href="./css/c-layout.css" id="stylesheet">
     <link rel="stylesheet" href="./css/c-custom.css" id="stylesheet">
+
 </head>
 
 <body class="application application-offset">
     <!-- Application container -->
     <div class="container-fluid container-application">
+        <!-- Sidenav (For Mobile) -->
         <div class="sidenav" id="sidenav-main">
             <!-- Sidenav header -->
             <div class="sidenav-header d-flex align-items-center">
@@ -70,7 +73,7 @@
             <!-- Application nav -->
             <div class="nav-application clearfix">
                 <a href="index.html" class="btn btn-square text-sm">
-                    <span class="btn-inner--icon d-block"><i class="fas fa-home fa-2x active"></i></span>
+                    <span class="btn-inner--icon d-block"><i class="fas fa-home fa-2x"></i></span>
                     <span class="btn-inner--icon d-block pt-2">首頁</span>
                 </a>
                 <a href="#" class="btn btn-square text-sm">
@@ -89,7 +92,7 @@
                     <span class="btn-inner--icon d-block"><i class="fas fa-users-cog fa-2x"></i></span>
                     <span class="btn-inner--icon d-block pt-2">人員進出自動辨識</span>
                 </a>
-                <a href="career_member_management.html" class="btn btn-square text-sm">
+                <a href="career_member_management.html" class="btn btn-square text-sm active">
                     <span class="btn-inner--icon d-block"><i class="fas fa-user-ninja fa-2x"></i></span>
                     <span class="btn-inner--icon d-block pt-2">事業單位人員維護</span>
                 </a>
@@ -111,7 +114,6 @@
                 </a>
             </div>
         </div>
-
         <!-- Content -->
         <div class="main-content position-relative">
             <!-- Main nav -->
@@ -320,9 +322,8 @@
                     </div>
                 </div>
             </nav>
-
             <!-- Page content -->
-            <div class="page-content index">
+            <div class="page-content career_member_edit">
                 <!-- Page title -->
                 <div class="page-title">
                     <div class="row justify-content-between align-items-center">
@@ -332,172 +333,115 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-8 col-md-6">
-                        <div class="card card-fluid card-custom">
-                            <div class="card-header">
-                                <h6 class="mb-0">近期活動</h6>
+                <!-- Form -->
+                <div class="card">
+                    <form>
+                        <!-- Card header -->
+                        <div class="card-header actions-toolbar border-0">
+                            <div class="actions-search" id="actions-search">
+                                <div class="input-group input-group-merge input-group-flush">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-transparent"><i class="fas fa-search"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control form-control-flush" placeholder="Type and hit enter ...">
+                                    <div class="input-group-append">
+                                        <a href="#" class="input-group-text bg-transparent" data-action="search-close" data-target="#actions-search"><i class="fas fa-times"></i></a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="list-group list-group-flush">
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <div class="media align-items-center">
-                                        <div class="media-body">
-                                            <h6 class="text-sm d-block text-limit mb-0">臺灣職安卡一般安全衛生教育訓練</h6>
-                                            <span class="d-block text-sm text-muted">管制人員：48人</span>
-                                        </div>
-                                        <div class="media-body text-right">
-                                            <span class="text-sm text-dark font-weight-bold ml-3">
-                                                活動日期 2021/01/31
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <div class="media align-items-center">
-                                        <div class="media-body">
-                                            <h6 class="text-sm d-block text-limit mb-0">屋頂作業主管安全衛生在職教育訓練</h6>
-                                            <span class="d-block text-sm text-muted">管制人員：69人</span>
-                                        </div>
-                                        <div class="media-body text-right">
-                                            <span class="text-sm text-dark font-weight-bold ml-3">
-                                                活動日期 2021/02/02
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <div class="media align-items-center">
-                                        <div class="media-body">
-                                            <h6 class="text-sm d-block text-limit mb-0">有害作業主管安全衛生在職教育訓練</h6>
-                                            <span class="d-block text-sm text-muted">管制人員：30人</span>
-                                        </div>
-                                        <div class="media-body text-right">
-                                            <span class="text-sm text-dark font-weight-bold ml-3">
-                                                活動日期 2021/02/15
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <div class="media align-items-center">
-                                        <div class="media-body">
-                                            <h6 class="text-sm d-block text-limit mb-0">有害作業主管安全衛生在職教育訓練</h6>
-                                            <span class="d-block text-sm text-muted">管制人員：30人</span>
-                                        </div>
-                                        <div class="media-body text-right">
-                                            <span class="text-sm text-dark font-weight-bold ml-3">
-                                                活動日期 2021/02/15
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <div class="media align-items-center">
-                                        <div class="media-body">
-                                            <h6 class="text-sm d-block text-limit mb-0">有害作業主管安全衛生在職教育訓練</h6>
-                                            <span class="d-block text-sm text-muted">管制人員：30人</span>
-                                        </div>
-                                        <div class="media-body text-right">
-                                            <span class="text-sm text-dark font-weight-bold ml-3">
-                                                活動日期 2021/02/15
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="py-3 px-4 text-right">
-                                    <a href="#" class="text-dark text-sm">更多</a>
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col">
+                                    <h4 class="d-inline-block mb-0 card-title">事業單位人員維護</h6>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="card card-fluid card-custom">
-                            <div class="card-body text-center d-flex flex-column justify-content-center">
-                                <h5 class="mb-4">目前人數</h5>
-                                <div class="progress-circle progress-lg mx-auto" id="progress-5" data-progress="50" data-text="98" data-textclass="h1" data-color="warning"></div>
-                                <div class="d-flex mt-4">
-                                    <div class="col">
-                                        <span class="d-block badge badge-dot badge-lg h6">
-                                            <i class="bg-danger"></i>入場人數
-                                        </span>
-                                        <span class="d-block badge badge-dot badge-lg h6">
-                                            <i class="bg-success"></i>出場人數
-                                        </span>
-                                    </div>
-                                    <div class="col">
-                                        <span class="d-block badge badge-dot badge-lg h6">
-                                            <i class="bg-warning"></i>目前人數
-                                        </span>
-                                        <span class="d-block badge badge-dot badge-lg h6">
-                                            <i class="bg-danger"></i>SMTP error
-                                        </span>
-                                    </div>
+
+                        <div class="card-body">
+                            <div class="form-group row justify-content-center mb-0 mb-md-4">
+                                <div class="col-md-5 mb-3 mb-md-0">
+                                    <label class="col-form-label text-sm">大頭照</label>
+                                    <div class="row justify-content-between align-items-center">
+                                        <div class="col-auto">
+                                            <div class="member_avatar">
+                                                <div class="avatar avatar-custom-size">
+                                                    <img src="http://fakeimg.pl/350x350" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col text-center">
+                                            <button type="button" class="btn btn-primary btn-lg rounded btn-icon-only btn-camera" data-toggle="modal" data-target="#cameraModal">
+                                                <span class="btn-inner--icon icon-sm">
+                                                    <i class="fas fa-camera"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>                                    
                                 </div>
-                                <a href="#" class="btn btn-block btn-secondary mt-auto">Open insights</a>
+                                <div class="col-md-5 mb-3 mb-md-0">
+                                    <label class="col-form-label text-sm">QRcode</label>
+                                    <div  class="member_qrcode"><img src="./images/qrcode.png" alt="QRcode"></div>
+                                </div>
+                            </div>
+                            <div class="form-group row justify-content-center mb-0 mb-md-4">
+                                <div class="col-md-5 mb-3 mb-md-0">
+                                    <label class="col-form-label text-sm">事業單位名稱</label>
+                                    <input type="text" class="form-control text-sm" placeholder="請輸入事業單位名稱" value="凌網科技股份有限公司">
+                                </div>
+                                <div class="col-md-5 mb-3 mb-md-0">
+                                    <label class="col-form-label text-sm">電話</label>
+                                    <input type="text" class="form-control text-sm" placeholder="請輸入電話" value="03-2339445">
+                                </div>
+                            </div>
+                            <div class="form-group row justify-content-center mb-0 mb-md-4">
+                                <div class="col-md-5 mb-3 mb-md-0">
+                                    <label class="col-form-label text-sm">編號</label>
+                                    <input type="text" class="form-control text-sm" placeholder="請輸入編號" value="2021000001">
+                                </div>
+                                <div class="col-md-5 mb-3 mb-md-0">
+                                    <label class="col-form-label text-sm">職稱</label>
+                                    <input type="text" class="form-control text-sm" placeholder="請輸入職稱" value="負責人">
+                                </div>
+                            </div>
+                            <div class="form-group row justify-content-center mb-0 mb-md-4">
+                                <div class="col-md-5 mb-3 mb-md-0">
+                                    <label class="col-form-label text-sm">姓名</label>
+                                    <input type="text" class="form-control text-sm" placeholder="請輸入姓名" value="劉澤山">
+                                </div>
+                                <div class="col-md-5 mb-3 mb-md-0">
+                                    <label class="col-form-label text-sm">辦訓單位聯絡人</label>
+                                    <input type="text" class="form-control text-sm" placeholder="請輸入辦訓單位聯絡人" value="徐德懿">
+                                </div>
+                            </div>
+                            <div class="form-group row justify-content-center mb-0 mb-md-4">
+                                <div class="col-md-10 mb-3 mb-md-0">
+                                    <label class="col-form-label" for="file">學經歷(受訓紀錄等)</label>
+                                    <input type="file" class="multi" id="file" name="file" multiple>
+                                </div>
+                            </div>
+                            <div class="form-group row justify-content-center mb-0 mb-md-4">
+                                <div class="col-md-10 mb-3 mb-md-0">
+                                    <label class="col-form-label" for="file">子單位</label>
+                                    <select class="form-control js-select p-0" multiple="multiple">
+                                        <option value="1">台北分公司</option>
+                                        <option value="2">新竹分公司</option>
+                                        <option value="3">台中分公司</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="card card-fluid card-custom">
-                            <div class="card-body">
-                                <div class="row align-items-center mb-4">
-                                    <div class="col-auto">
-                                        <div class="progress-circle progress-sm" id="progress-1" data-progress="90" data-color="primary"></div>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#" class="d-block h6 mb-0">98 tasks solved</a>
-                                        <a href="#" class="text-sm text-muted">Purpose Website UI</a>
-                                    </div>
+
+                        <!-- Card footer -->
+                        <div class="card-footer">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-auto">
+                                    <button type="submit" class="btn btn-md btn-primary btn-save my-1">儲存</button>
+                                    <a class="btn btn-md btn-secondary my-1">返回</a>
                                 </div>
-                                <div class="row align-items-center mb-4">
-                                    <div class="col-auto">
-                                        <div class="progress-circle progress-sm" id="progress-2" data-progress="40" data-color="warning"></div>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#!" class="d-block h6 mb-0">13 tasks solved</a>
-                                        <a href="#" class="text-sm text-muted">Webpixels website</a>
-                                    </div>
-                                </div>
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <div class="progress-circle progress-sm" id="progress-3" data-progress="60" data-color="info"></div>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#!" class="d-block h6 mb-0">23 tasks solved</a>
-                                        <a href="#" class="text-sm text-muted">Purpose Dashboard UI</a>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-sm btn-block btn-secondary mt-5">Open insights</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="card card-fluid card-custom">
-                            <div class="card-body text-center d-flex flex-column justify-content-center">
-                                <h5 class="mb-4">Congratulations!</h5>
-                                <div class="progress-circle progress-lg mx-auto" id="progress-4" data-progress="78" data-text="23" data-textclass="h1" data-color="primary"></div>
-                                <p class="mt-4 mb-0">
-                                    Github issues were closed this week.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12">
-                        <!-- Calendar -->
-                        <div class="card card-custom widget-calendar">
-                            <div class="card-header">
-                                <div class="text-sm text-muted mb-1 widget-calendar-year"></div>
-                                <div class="h5 mb-0 widget-calendar-day"></div>
-                            </div>
-                            <!-- Calendar -->
-                            <div data-toggle="widget-calendar"></div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
-
             <!-- Footer -->
             <div class="footer pt-5 pb-4 footer-light" id="footer-main">
                 <div class="row text-center text-sm-left align-items-sm-center">
@@ -519,10 +463,61 @@
                     </div>
                 </div>
             </div>
-
-            
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade docs-example-modal-xl" id="cameraModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">對準鏡頭後，按下拍照。</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-between align-items-center text-center">
+                        <div class="col-12 col-lg">
+                            <div class="member_avatar-before">
+                                <div class="avatar avatar-custom-size">
+                                    <img src="http://fakeimg.pl/350x350" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-auto">
+                            <div class="row">
+                                <div class="col-6 col-lg-12 py-3">
+                                    <button type="button" class="btn btn-info text-sm">拍照</button>
+                                </div>
+                                <div class="col-6 col-lg-12 py-3">
+                                    <button type="button" class="btn btn-warning text-sm">重拍</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg">
+                            <div class="member_avatar-after">
+                                <div class="avatar avatar-custom-size">
+                                    <img src="http://fakeimg.pl/350x350" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-block">
+                    <div class="row justify-content-center justify-content-lg-end">
+                        <div class="col-12 col-lg-auto my-2 my-lg-0">
+                            <button type="button" class="btn btn-primary text-sm w-100">儲存</button>
+                        </div>
+                        <div class="col-12 col-lg-auto my-2 my-lg-0">
+                            <button type="button" class="btn btn-secondary text-sm w-100" data-dismiss="modal">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Scripts -->
     <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
@@ -535,6 +530,17 @@
     <!-- Vendor- Purpose JS -->
     <script src="./vendor/purpose/assets/js/purpose.js"></script>
 
+    <!-- File Upload JS -->
+    <script src="./vendor/multifile/jquery.MultiFile.js"></script>
+    <!-- Multiple-select JS -->
+    <script src="./vendor/multiple-select-1.5.2/multiple-select-es.min.js"></script>
+    <script src="./vendor/multiple-select-1.5.2/multiple-select-zh-TW.min.js"></script>
+
+    <script>
+        $('.js-select').multipleSelect({
+            locale: 'zh-TW'
+        });
+    </script>
 </body>
 
 </html>
