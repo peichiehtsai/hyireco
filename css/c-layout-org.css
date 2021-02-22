@@ -1,0 +1,13 @@
+/*===== Main Vision =====*/
+.application-offset .container-application:before,
+.application .sidenav.show:before{
+	background-color: #E2B732;
+}
+
+/*===== Left Nav =====*/
+.nav-application>.btn.active{
+	background-color: #ce9400;
+}
+.nav-application>.btn:hover:not(.active){
+	color: #946b00;
+}
